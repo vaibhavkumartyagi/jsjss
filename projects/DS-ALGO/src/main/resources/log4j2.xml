@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" monitorInterval="30">
+
+
+	<Properties>
+		<Property name="log-path">./logs/
+		</Property>
+		<Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %5p
+			%-40.40c{1.}:%L %m%n%ex</Property>
+	</Properties>
+
+
+	<Appenders>
+		<RollingFile name="SELog" fileName="${log-path}/se.log"
+			filePattern="${log-path}/se.log-%d{yyyy-MM-dd}-%i.gz">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %40.40c{1.}:%L %m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+				<SizeBasedTriggeringPolicy size="500MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="1000" />
+		</RollingFile>
+
+		
+		<RollingFile name="FWLog" fileName="${log-path}/fw.log"
+			filePattern="${log-path}/fw.log-%d{yyyy-MM-dd}-%i.gz">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %40.40c{1.}:%L %m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+				<SizeBasedTriggeringPolicy size="500MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="2" />
+		</RollingFile>
+		<Console name="ConsoleAppender" target="SYSTEM_OUT" follow="false">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+		</Console>
+	</Appenders>
+
+	<Loggers>
+
+		<Logger name="com" level="DEBUG" additivity="false">
+			<AppenderRef ref="SELog" />
+		</Logger>
+
+	</Loggers>
+</Configuration>
