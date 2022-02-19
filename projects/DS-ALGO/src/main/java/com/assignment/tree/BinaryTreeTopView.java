@@ -46,9 +46,9 @@ class BinaryTreeTopView {
 		root = null;
 	}
 
-	private static Map<Integer, Node> map = new TreeMap<Integer, Node>();
+	private static Map<Integer, Node> map = new TreeMap<Integer, Node>();//sorting order left to right
 	private static Queue<Pair> queue = new LinkedList<>();
-
+   
 	void printTopView(Node node, int index) {
 		while (!queue.isEmpty()) {
 
@@ -71,13 +71,11 @@ class BinaryTreeTopView {
 	}
 
 	void printTopView() {
-
 		queue.add(new Pair(root, 0));
 		printTopView(root, 0);
-
 	}
 
-	// Driver method
+	
 	public static void main(String[] args) {
 		BinaryTreeTopView tree = new BinaryTreeTopView();
 		tree.root = new Node(1);
