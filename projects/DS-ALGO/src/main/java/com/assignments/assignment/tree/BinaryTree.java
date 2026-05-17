@@ -1,4 +1,4 @@
-package com.assignment.tree;
+package com.assignments.assignment.tree;
 
 class BinaryTree {
 	// Root of Binary Tree

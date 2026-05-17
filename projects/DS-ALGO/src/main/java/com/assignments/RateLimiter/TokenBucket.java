@@ -1,4 +1,4 @@
-package com.RateLimiter;
+package com.assignments.RateLimiter;
 
 import java.util.concurrent.TimeUnit;
 

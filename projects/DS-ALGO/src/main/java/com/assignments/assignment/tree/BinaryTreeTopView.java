@@ -1,4 +1,4 @@
-package com.assignment.tree;
+package com.assignments.assignment.tree;
 
 import java.util.LinkedList;
 import java.util.Map;

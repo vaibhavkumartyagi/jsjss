@@ -1,4 +1,4 @@
-package com.multithreads;
+package com.assignments.multithreads;
 
 public class PrinterThread {
 

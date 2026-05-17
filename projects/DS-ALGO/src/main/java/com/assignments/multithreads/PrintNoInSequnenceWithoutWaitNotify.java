@@ -1,4 +1,4 @@
-package com.multithreads;
+package com.assignments.multithreads;
 
 public class PrintNoInSequnenceWithoutWaitNotify implements Runnable{
 

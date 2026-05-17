@@ -1,4 +1,4 @@
-package com.multithreads;
+package com.assignments.multithreads;
 
 public class ModulsToGetThreadId {
 	
@@ -7,7 +7,7 @@ public class ModulsToGetThreadId {
 		int TOTAL_THREADS = 5;
 		for(int threadId=0; threadId < 5; threadId ++) {
 			
-			System.out.println(threadId % TOTAL_THREADS);
+			System.out.println(threadId+"% "+TOTAL_THREADS+"="+(threadId % TOTAL_THREADS));
 		}
 		
 	}
