@@ -1,4 +1,4 @@
-package com.assignments.test;
+package com.assignments.hw;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

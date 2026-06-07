@@ -1,7 +1,6 @@
-package com.assignments.test;
+package com.assignments.hw;
 
 import java.util.ArrayList;
-import java.util.Set;
 import java.util.TreeSet;
 
 public class TreeSetExample {

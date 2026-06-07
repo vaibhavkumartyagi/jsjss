@@ -1,4 +1,4 @@
-package com.assignments.test;
+package com.assignments.hw;
 
 public class LinkNode {
 

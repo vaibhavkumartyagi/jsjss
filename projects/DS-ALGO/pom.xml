@@ -106,7 +106,7 @@
                   <configuration>
                      <transformers>
                         <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                           <mainClass>com.assignments.test.Main</mainClass>
+                           <mainClass>com.assignments.hw.Main</mainClass>
                         </transformer>
                      </transformers>
                   </configuration>
