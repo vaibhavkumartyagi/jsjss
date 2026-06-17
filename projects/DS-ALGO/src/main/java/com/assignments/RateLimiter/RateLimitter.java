@@ -1,4 +1,4 @@
-package com.test;
+package com.assignments.RateLimiter;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

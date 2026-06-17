@@ -137,9 +137,10 @@ public class SlidingWindowRateLimiter {
      * Creates a limiter on first call for a new user.
      */
     public boolean allowRequest(String userId) {
-        UserLimiter limiter = registry.computeIfAbsent(
-            userId, k -> new UserLimiter(limit, windowMs, numBuckets)
+        UserLimiter limiter = registry.putIfAbsent(
+            userId, new UserLimiter(limit, windowMs, numBuckets)
         );
+        limiter = registry.get(userId);
         return limiter.allowRequest();
     }
 
