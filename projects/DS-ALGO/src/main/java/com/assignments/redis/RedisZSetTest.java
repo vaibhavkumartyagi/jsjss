@@ -1,11 +1,9 @@
-package com.assignments.general;
+package com.assignments.redis;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.resps.Tuple;
-import redis.clients.jedis.params.ZRangeParams;
 
 import java.util.List;
-import java.util.Map;
 
 public class RedisZSetTest {
 

@@ -1,4 +1,6 @@
-package com.assignments.hw;
+package com.assignments.LinkedList;
+
+import com.assignments.hw.LinkNode;
 
 public class ReverseSingleLinkedList {
 	

@@ -1,4 +1,4 @@
-package com.assignments.list;
+package com.assignments.LinkedList;
 
 public class ListReverseNodeinKGroupTest {
 

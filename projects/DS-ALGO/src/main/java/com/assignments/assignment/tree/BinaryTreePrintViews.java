@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.TreeMap;
 
-class BinaryTreeTopView {
+class BinaryTreePrintViews {
 	// Root of Binary Tree
 	class Pair {
 
@@ -44,7 +44,7 @@ class BinaryTreeTopView {
 
 	Node root;
 
-	BinaryTreeTopView() {
+	BinaryTreePrintViews() {
 		root = null;
 	}
 
@@ -170,7 +170,7 @@ class BinaryTreeTopView {
     }
 
     public static void main(String[] args) {
-		BinaryTreeTopView tree = new BinaryTreeTopView();
+		BinaryTreePrintViews tree = new BinaryTreePrintViews();
 		tree.root = new Node(1);
 		tree.root.left = new Node(2);
 		tree.root.right = new Node(3);

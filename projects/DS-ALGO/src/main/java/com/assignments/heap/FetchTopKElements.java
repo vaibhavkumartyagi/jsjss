@@ -1,16 +1,13 @@
-package com.assignments.javads.heap;
+package com.assignments.heap;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.*;
 
-public class FetchBottomKElements {
+public class FetchTopKElements {
 
-    private final PriorityQueue<Integer> queue = new PriorityQueue<Integer>((a, b)-> (b-a));
+    private final PriorityQueue<Integer> queue = new PriorityQueue<Integer>((a, b)-> (a-b));
 
     public static void main(String args[]){
-        FetchBottomKElements obj = new FetchBottomKElements();
+        FetchTopKElements obj = new FetchTopKElements();
         System.out.println(obj.getTopK(10));
     }
 
@@ -25,7 +22,7 @@ public class FetchBottomKElements {
         while(!queue.isEmpty()) { // add remaining elements in Array
             list.add(queue.poll());
         }
-        System.out.println("For TOP K - MIN Heap will work (a,b)-> (b-a)");
+        System.out.println("For TOP K - MIN Heap will work (a,b)-> (a-b)");
         System.out.println("Last K elements in queue ");
         System.out.println(list);
         Collections.reverse(list);

@@ -1,4 +1,4 @@
-package com.assignments.hw;
+package com.assignments.general;
 
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
